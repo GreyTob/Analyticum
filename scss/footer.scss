@@ -1,0 +1,127 @@
+.footer {
+	max-width: 100%;
+	height: 110px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: $lightbrown;
+
+	ul {
+		max-width: 830px;
+		margin-left: 70px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	ul > li {
+		position: relative;
+		display: inline-block;
+		margin-left: 53px;
+		
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 30px;
+			width: 100%;
+			height: 4px;
+			border-radius: 4px;
+			background: $red;
+			opacity: 0;
+			transition: opacity .4s;
+		}
+	}
+	
+	ul > li:hover {
+		color: $red;
+
+		&:before {
+			opacity: 1;
+		}
+	}
+	
+	a {
+		color: $white;
+		transition: color .4s;
+	}
+
+	a:hover {
+		color: $red;
+	}
+}
+
+.cocial {
+	max-width: 220px;
+	margin-right: 90px;
+
+	div {
+		display: inline-block;
+		width: 36px;
+		height: 36px;
+		border: 1px solid $orange;
+		border-radius: 50%; 
+		margin-left: 15px;
+	}
+}
+
+.vkontakte {
+	background: url(../img/icon_vk.svg) no-repeat center;
+	transition: all 500ms;
+}
+
+.vkontakte:hover {
+	border: 1px solid $red;
+	background: url(../img/icon_vk_hover.svg) no-repeat center;
+}
+
+.facebook {
+	background: url(../img/icon_fb.svg) no-repeat center;
+	transition: all 500ms;
+}
+
+.facebook:hover {
+	border: 1px solid $red;
+	background: url(../img/icon_fb_hover.svg) no-repeat center;
+}
+
+.instagramm {
+	background: url(../img/icon_inst.svg) no-repeat center;
+	transition: all 500ms;
+}
+
+.instagramm:hover {
+	border: 1px solid $red;
+	background: url(../img/icon_inst_hover.svg) no-repeat center;
+}
+
+.okdnoklassniki {
+	background: url(../img/icon_ok.svg) no-repeat center;
+	transition: all 500ms;
+}
+
+.okdnoklassniki:hover {
+	border: 1px solid $red;
+	background: url(../img/icon_ok_hover.svg) no-repeat center;
+}
+
+@media (max-width: 1100px) {
+	.footer ul {
+		max-width: 800px;
+		margin-left: 50px;
+	}
+		.footer ul > li {
+			margin-left: 23px;
+		}
+
+}
+
+@media (max-width: 950px) {
+	.footer ul {
+		display: none;
+	}
+
+	.cocial {
+		margin: 0 auto;
+	}
+}
+

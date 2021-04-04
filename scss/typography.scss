@@ -1,0 +1,282 @@
+//адаптивный шрифт
+$maxWidth: 3200;
+@mixin adaptiv-font($pcSize, $mobSize) {
+ $addSize: $pcSize - $mobSize;
+ $maxWidth: $maxWidth - 320;
+ font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+.header .mainMenu, .footer .footerMenu {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	@include adaptiv-font(20, 14);
+	line-height: 24px;
+	text-transform: lowercase;
+}
+
+.header {
+	
+	.callback {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		@include adaptiv-font(20, 16);
+		line-height: 24px;
+		text-transform: lowercase;
+		color: $red;
+	}
+
+	.startAdventure > p {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		@include adaptiv-font(36, 32);
+		line-height: 44px;
+		text-transform: uppercase;
+		color: $white;
+	}
+
+	.startAdventure > h2 {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 800;
+		@include adaptiv-font(72, 22);
+		line-height: 88px;
+		text-transform: uppercase;
+		color: $white;
+	}
+
+	.startAdventure > button {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		@include adaptiv-font(36, 32);
+		line-height: 80px;
+		text-align: center;
+		text-transform: lowercase;
+		color: $white;
+	}
+}
+
+.property  {
+
+	h3 {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		@include adaptiv-font(36, 28);
+		line-height: 44px;
+		text-transform: lowercase;
+		color: $lightbrown;
+		transform: rotate(0.1deg);
+	}
+
+	p {
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: normal;
+		@include adaptiv-font(20, 16);
+		line-height: 27px;
+		text-transform: lowercase;
+		color: $lightbrown;
+		transform: rotate(0.1deg);
+	}
+
+}
+
+.aboutUs {
+
+	h2 {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 800;	
+		@include adaptiv-font(72, 25);
+		line-height: 88px;
+		text-transform: uppercase;
+		color: $darckbrown;
+	}
+
+	p {
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: normal;
+		@include adaptiv-font(36, 24);
+		line-height: 49px;
+		text-transform: lowercase;
+		color: $lightbrown;
+	}
+
+	button {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		@include adaptiv-font(20, 16);
+		line-height: 60px;
+		text-align: center;
+		text-transform: uppercase;
+		color: $white;
+		transform: rotate(0.1deg);
+	}
+}
+
+.userForm {
+
+	.btnForm {
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: normal;
+		@include adaptiv-font(36, 18);
+		line-height: 49px;
+		text-transform: lowercase;
+		color: $lightbrown;
+	}
+
+	.addTitle {
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: bold;
+		@include adaptiv-font(20, 16);
+		color: $lightbrown;
+	}
+
+
+	.add {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		@include adaptiv-font(20, 16);
+		line-height: 50px;
+		text-transform: lowercase;
+		color: $red;
+	}
+
+	h3 {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		@include adaptiv-font(36, 26);
+		line-height: 44px;
+		text-transform: uppercase;
+		color: $lightbrown;
+	}
+
+	.submit {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		@include adaptiv-font(20, 16);
+		line-height: 24px;
+		text-align: center;
+		text-transform: uppercase;
+		color: $white;
+		transform: rotate(0.1deg);
+	}
+
+	label {
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: bold;
+		@include adaptiv-font(20, 16);
+		line-height: 27px;
+		color: $lightbrown;
+	}
+
+	input, .gender {
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: normal;
+		@include adaptiv-font(20, 16);
+		line-height: 27px;
+		color: $black;
+	}
+
+	input[palaceholder] {
+		color: $lightgray;
+	}
+
+	.goodLuck {
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: bold;
+		@include adaptiv-font(20, 14);
+		line-height: 27px;
+		text-transform: uppercase;
+		color: $lightbrown;
+	}
+}
+
+.rules {
+	p {
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: normal;
+		@include adaptiv-font(20, 12);
+		line-height: 27px;
+		text-transform: lowercase;
+		color: $lightbrown;
+	}
+}
+
+.modal {
+	h3 {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		@include adaptiv-font(36, 13);
+		line-height: 44px;
+		text-transform: uppercase;
+		color: $red;
+	}
+
+	label {
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: bold;
+		@include adaptiv-font(20, 16);
+		line-height: 27px;
+		color: $lightbrown;
+	}
+
+	p {
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: normal;
+		@include adaptiv-font(16, 14);
+		line-height: 22px;
+		color: $lightbrown;
+	}
+
+	a {
+		font-weight: bold;
+		color: $red;
+		text-decoration: underline;
+		margin-bottom: 29px;
+	}
+
+	.submit {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		@include adaptiv-font(20, 16);
+		line-height: 24px;
+		text-align: center;
+		text-transform: uppercase;
+		color: $white;
+		transform: rotate(0.1deg);
+	}
+
+	input, textarea {
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: normal;
+		@include adaptiv-font(20, 16);
+		line-height: 27px;
+		color: $black;
+	}
+
+	input[palaceholder] {
+		color: $lightgray;
+	}
+
+}

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>test for Analyticum+</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		
+
+		<header class="slider-container">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+
+						<div class="header secondSlider swiper-slide">
+							<div class="logo">
+								<a href="#"><img src="img/Logo_test.svg" alt="логотип"></a>
+							</div>
+
+
+							<div class="menu">
+								<nav class="mainMenu">
+									<ul>
+										<li><a href="#aboutUS">О КОМПАНИИ</a></li>
+										<li><a href="#">НАПРАВЛЕНИЯ</a></li>
+										<li><a href="#">ОТЗЫВЫ</a></li>
+										<li><a href="#">НОВОСТИ</a></li>
+										<li><a href="#">КОНТАКТЫ</a></li>
+									</ul>
+								</nav>
+							</div>
+								<button class="callback" id="callback" onclick="show('block')">обратный звонок</button>
+						
+
+							<div class="container">
+								<div class="startAdventure">
+									<p>Начни с нами</p>
+									<h2>Свое приключение</h2>
+									<button class="go">перейти</button>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="header swiper-slide">
+							<div class="logo">
+								<a href="#"><img src="img/Logo_test.svg" alt="логотип"></a>
+							</div>
+
+							<div class="menu">
+								<nav class="mainMenu">
+									<ul>
+										<li><a href="#aboutUS">О КОМПАНИИ</a></li>
+										<li><a href="#">НАПРАВЛЕНИЯ</a></li>
+										<li><a href="#">ОТЗЫВЫ</a></li>
+										<li><a href="#">НОВОСТИ</a></li>
+										<li><a href="#">КОНТАКТЫ</a></li>
+									</ul>
+								</nav>
+							</div>
+								<button class="callback" id="callback" onclick="show('block')">обратный звонок</button>
+							
+
+							<div class="container">
+								<div class="startAdventure">
+									<p>Начни с нами</p>
+									<h2>Свое приключение</h2>
+									<button class="go">перейти</button>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="header thirdSlider swiper-slide">
+							<div class="logo">
+								<a href="#"><img src="img/Logo_test.svg" alt="логотип"></a>
+							</div>
+
+							<div class="menu">
+								<nav class="mainMenu">
+									<ul>
+										<li><a href="#aboutUS">О КОМПАНИИ</a></li>
+										<li><a href="#">НАПРАВЛЕНИЯ</a></li>
+										<li><a href="#">ОТЗЫВЫ</a></li>
+										<li><a href="#">НОВОСТИ</a></li>
+										<li><a href="#">КОНТАКТЫ</a></li>
+									</ul>
+								</nav>
+							</div>
+								<button class="callback" id="callback" onclick="show('block')">обратный звонок</button>
+							
+
+							<div class="container">
+								<div class="startAdventure">
+									<p>Начни с нами</p>
+									<h2>Свое приключение</h2>
+									<button class="go">перейти</button>
+								</div>
+								
+							</div>
+						</div>
+
+					</div>
+					<div class="swiper-pagination"></div>
+
+				</div>
+		</header>
+
+		
+		<section class="modal" id="modal">
+
+			<div class="centerModal">
+
+				<h3>Заполните форму</h3>
+
+				<form action="#" method="post" class="formModal" onsubmit="return validate()">
+
+						<div class="gridModal">
+
+							<label>Имя<br>
+								<input type="text" class="name size" id="modalName">
+							</label>
+
+							<label>Телефон<br>
+								<input type="tel" class="name size" id="modalTel" placeholder="+7&nbsp(&nbsp &nbsp)&nbsp &nbsp-&nbsp &nbsp-">
+							</label>
+
+						</div>
+	
+						<label>E-mail<br><input type="email" class="email size" id="modalEmail"></label>
+
+						<label>Задать вопрос<br>
+							<textarea name="question" id="modalQuestion"></textarea>
+						</label>
+						<p>Отправляя любые формы запросов, Вы соглашаетесь с условиями <a href="">«Положения о конфиденциальности»</a></p>
+
+						<input type="submit" class="submit" id="modalSubmit"  value="Отправить">
+
+						<button class="close" id="closeModal" onclick="show('none')"></button>
+
+				</form>
+			</div>
+
+		</section>
+
+		<div id="filter" onclick="show('none')"></div>	
+
+		<section class="property">
+
+			<div class="container">
+
+				<div class="itemGrid">
+					<div class="item">
+						<a href="#"><img src="img/Properts1.svg" alt="Спонтанно"></a>
+						<h3>Спонтанно</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+					</div>
+
+					<div class="item">
+						<a href="#"><img src="img/Properts2.svg" alt="Энергично"></a>
+						<h3>Энергично</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+					</div>
+
+					<div class="item">
+						<a href="#"><img src="img/Properts3.svg" alt="Весело"></a>
+						<h3>Весело</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+
+
+		<section class="aboutUs" id="aboutUS">
+			<div class="container">
+				<div class="grid">
+					<div class="yourJourney">
+						<h2>О нас</h2>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
+						<button>подробнее</button>
+					</div>
+				
+					<div class="image">
+						<img src="img/aboutUs_girl.png" alt="girl" class="girl">
+						<img src="img/aboutUs_mount.png" alt="mount" class="mount">
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+
+		<section class="userForm">
+
+			<div class="container">
+
+					<button class="btnForm btnForm" id="btnForm">Личные данные</button>
+					<button class="btnForm btnRules" id="btnRules">правила участия</button>
+
+				<hr>
+
+				<div class='form' id="showForm">
+
+					<h3>Заполните форму</h3>
+					
+					<form action="#" onsubmit="return validateForm()" method="post" enctype="multipart/form-data" class="formData feedback-form-1" >
+						<div class="grid">
+
+								<fieldset class="photo">
+												
+									<div class="input-file-row">
+									
+										<div class="upload-file-container">
+											<img id="image" src="#" alt="" >				
+										</div>
+										<div class="upload-file-container-text">
+												<span class="addTitle">Загрузите фото</span><br>
+												<input type="file" name="pic[]" class="add" id="imgInput"  >
+												<label class="add" for="imgInput">Выберите файл</label>
+										</div>				
+														
+									</div>			
+								</fieldset>
+
+							<label>Пол<br>
+								<select class="gender size" id="gender">
+									<option value="unknow">не выбран</option>
+									<option value="male">мужской</option>
+									<option value="female">женский</option>
+								</select> 
+							</label>
+
+							<label>Имя<br><input type="text" class="name size" id="nameForm"></label>
+
+							<label>Телефон<br><input type="tel" class="tel size" id="telForm" placeholder="+7&nbsp(&nbsp &nbsp)&nbsp &nbsp-&nbsp &nbsp-"></label>
+
+							<label>Фамилия<br><input type="text" class="size" id="surnameForm"></label>	
+							<label>E-mail<br><input type="email" class="email size" id="emailForm"></label>
+
+						</div>
+
+						<input type="submit" class="submit" id="sub" value="Отправить">
+
+					</form>
+				</div>
+
+				<div class="rules" id="showRules">
+					
+					<h3>будь собой</h3>
+					<p>t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+
+					<p class="circle">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+
+					<p class="circle">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+
+					<p class="circle">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+
+					<p class="goodLuck">Удачи в твоих начинаниях)</p>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<footer class="footer">
+
+			<nav class="footerMenu">
+				<ul>
+					<li><a href="#aboutUS">О КОМПАНИИ</a></li>
+					<li><a href="#">НАПРАВЛЕНИЯ</a></li>
+					<li><a href="#">ОТЗЫВЫ</a></li>
+					<li><a href="#">НОВОСТИ</a></li>
+					<li><a href="#">КОНТАКТЫ</a></li>
+				</ul>
+			</nav>
+
+			<div class="cocial">
+				<a href="#"><div class="vkontakte"></div></a>
+				<a href="#"><div class="facebook"></div></a>
+				<a href="#"><div class="instagramm"></div></a>
+				<a href="#"><div class="okdnoklassniki"></div></a>
+			</div>
+
+		</footer>
+
+
+
+	</div>
+
+
+
+
+
+	<script src="js/modal.js"></script>
+	<script src="js/formOrRules.js"></script>
+	<script src="js/validateModal.js"></script>
+	<script src="js/validateForm.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/jQuery.js"></script>
+	<script src="js/previewPhotoLoader.js"></script>
+</body>
+</html>

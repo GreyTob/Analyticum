@@ -1,0 +1,54 @@
+.property {
+	max-width: 100%;
+	min-height: 700px;
+	margin-top: 105px;
+	background: url("../img/property_line.svg") no-repeat 0% 90%;
+}
+
+.itemGrid {
+	max-width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-content: space-between;
+}
+
+.item {
+	max-width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0 75px;
+
+	img {
+		width: 150px;
+		height: 150px;	
+	}
+
+	h3 {
+		display: block;
+		margin: 23px 0;
+		text-align: center;
+
+	}
+
+	p {
+		text-align: center;
+	}
+}
+
+@media (max-width: 1200px) {
+	.item {
+		padding: 20px;
+	}
+}
+
+@media (max-width: 767px) {
+	.property {
+		margin-top: 50px;
+		min-height: 1370px;
+		background: url("../img/property_line.svg") no-repeat 0% 100%;
+	}
+
+	.itemGrid {
+		display: block;
+	}
+}
