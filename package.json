@@ -1,0 +1,23 @@
+{
+  "name": "analyticum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GreyTob/Analyticum.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GreyTob/Analyticum/issues"
+  },
+  "homepage": "https://github.com/GreyTob/Analyticum#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
