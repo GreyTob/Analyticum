@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/GreyTob/Analyticum#readme",
   "dependencies": {
-    "node-sass": "^5.0.0"
+    "node-sass": "^5.0.0",
+    "swiper": "^6.5.9"
   }
 }

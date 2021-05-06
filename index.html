@@ -112,7 +112,7 @@
           <h3>Заполните форму</h3>
 
           <form
-            action="#"
+            action=""
             method="post"
             class="formModal"
             onsubmit="return validate()"
@@ -120,7 +120,12 @@
             <div class="gridModal">
               <label
                 >Имя<br />
-                <input type="text" class="name size" id="modalName" />
+                <input
+                  type="text"
+                  class="name size"
+                  id="modalName"
+                  onkeyup="this.value = this.value.replace(/^\d+$/,'');"
+                />
               </label>
 
               <label
@@ -129,6 +134,7 @@
                   type="tel"
                   class="name size"
                   id="modalTel"
+                  onkeyup="this.value = this.value.replace(/[^\d]/g,'');"
                   placeholder="+7&nbsp(&nbsp &nbsp)&nbsp &nbsp-&nbsp &nbsp-"
                 />
               </label>
@@ -236,7 +242,7 @@
             <h3>Заполните форму</h3>
 
             <form
-              action="#"
+              action=""
               onsubmit="return validateForm()"
               method="post"
               enctype="multipart/form-data"
@@ -271,7 +277,11 @@
                 </label>
 
                 <label
-                  >Имя<br /><input type="text" class="name size" id="nameForm"
+                  >Имя<br /><input
+                    type="text"
+                    class="name size"
+                    id="nameForm"
+                    onkeyup="this.value = this.value.replace(/^\d+$/,'');"
                 /></label>
 
                 <label
@@ -279,6 +289,7 @@
                     type="tel"
                     class="tel size"
                     id="telForm"
+                    onkeyup="this.value = this.value.replace(/[^\d]/g,'');"
                     placeholder="+7&nbsp(&nbsp &nbsp)&nbsp &nbsp-&nbsp &nbsp-"
                 /></label>
 
@@ -287,6 +298,7 @@
                     type="text"
                     class="size"
                     id="surnameForm"
+                    onkeyup="this.value = this.value.replace(/^\d+$/,'');"
                 /></label>
                 <label
                   >E-mail<br /><input
@@ -352,13 +364,10 @@
       </footer>
     </div>
 
-    <script src="js/modal.js"></script>
-    <script src="js/formOrRules.js"></script>
-    <script src="js/validateModal.js"></script>
-    <script src="js/validateForm.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/jQuery.js"></script>
+    <!-- <script src="js/navHandler.js"></script> -->
     <script src="js/swiper.min.js"></script>
     <script src="js/slider.js"></script>
-    <script src="js/jQuery.js"></script>
-    <script src="js/previewPhotoLoader.js"></script>
   </body>
 </html>
