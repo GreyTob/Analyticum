@@ -1,360 +1,351 @@
 .userForm {
-	max-width: 100%;
-	min-height: 783px;
-	background: url('../img/form_background.png') no-repeat center;
-	
-	.btnForm {
-		position: relative;
-		width: 300px;
-		height: 49px;
-		margin-top: 36px;
-		background: none;
-		margin-right: 107px;
-	}
+  max-width: 100%;
+  min-height: 783px;
+  background: url('../img/form_background.png') no-repeat center;
 
-	#btnForm {
-		opacity: 1;
+  .btnForm {
+    position: relative;
+    width: 300px;
+    height: 49px;
+    margin-top: 36px;
+    background: none;
+    margin-right: 107px;
+  }
 
-		&:hover {
-			&:before {
-				content: '';
-				position: absolute;
-				left: 0;
-				top: 82px;
-				width: 100%;
-				height: 4px;
-				border-radius: 4px;
-				background: $red;
-				z-index: 20;
-			}
-		}
-	}
+  #btnForm {
+    opacity: 1;
 
-	#btnRules {
-		opacity: .47;
+    &:hover {
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 82px;
+        width: 100%;
+        height: 4px;
+        border-radius: 4px;
+        background: $red;
+        z-index: 20;
+      }
+    }
+  }
 
-		&:hover {
-			&:before {
-				content: '';
-				position: absolute;
-				left: 0;
-				top: 82px;
-				width: 100%;
-				height: 4px;
-				border-radius: 4px;
-				background: $red;
-				z-index: 20;
-			}
-		}
-	}
+  #btnRules {
+    opacity: 0.47;
 
-	hr {
-		height: 0px;
-		margin-top: 33px;
-		margin-bottom: 59px;
-		border: 1px solid $red;
-		transform: rotate(-0.15deg);
-	}
+    &:hover {
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 82px;
+        width: 100%;
+        height: 4px;
+        border-radius: 4px;
+        background: $red;
+        z-index: 20;
+      }
+    }
+  }
 
-	h3 {
-		max-width: 487px;
-		height: 47px;
-		margin-bottom: 40px;
-	}
+  hr {
+    height: 0px;
+    margin-top: 33px;
+    margin-bottom: 59px;
+    border: 1px solid $red;
+    transform: rotate(-0.15deg);
+  }
 
-	.submit {
-		width: 223px;
-		height: 60px;
-		margin-top: 0px;
-		background: $orange;
-		box-shadow: 0px 2px 7px $rose;
-		border-radius: 3px;
-		transition: background .4s;
-	}
+  h3 {
+    max-width: 487px;
+    height: 47px;
+    margin-bottom: 40px;
+  }
 
-	.submit:hover {
-		background: $red;
-	}
+  .submit {
+    width: 223px;
+    height: 60px;
+    margin-top: 0px;
+    background: $orange;
+    box-shadow: 0px 2px 7px $rose;
+    border-radius: 3px;
+    transition: all 0.4s;
+  }
 
-	input {
-		margin-top: 6px;
-	}
+  .submit:hover {
+    background: $red;
+  }
 
+  input {
+    margin-top: 6px;
+  }
 }
 
 .formData .size {
-	width: 716px;
-	height: 50px;
-	padding: 15px 20px 15px;
-	background: $white;
-	border-radius: 3px;
+  width: 716px;
+  height: 50px;
+  padding: 15px 20px 15px;
+  background: $white;
+  border-radius: 3px;
 }
 
 .formData .gender {
-	padding: 0 20px;
+  padding: 0 20px;
 }
 
 .photo {
-	width: none;
+  width: none;
 
-	.input-file-row {
-		position: relative;
+  .input-file-row {
+    position: relative;
+  }
 
-	}
+  .upload-file-container {
+    position: relative;
+    width: 101px;
+    height: 101px;
+    overflow: hidden;
+    background: $gray url('../img/form_girl.png') top center no-repeat;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px $rose;
 
-	.upload-file-container { 
-		position: relative; 
-		width: 101px; 
-		height: 101px; 
-		overflow: hidden;	
-		background: $gray url('../img/form_girl.svg') top center no-repeat;
-		border-radius: 50%;
-		box-shadow: 0px 2px 5px $rose;
+    & > img {
+      width: 101px;
+      height: 101px;
+    }
+  }
 
-		& > img {
-			width: 101px;
-			height: 101px;
-		}
-	} 
+  .upload-file-container-text {
+    display: block;
+    position: absolute;
+    left: 128px;
+    top: 5px;
+    width: 212px;
+    height: 35px;
 
-	.upload-file-container-text {
-		display: block;
-		position: absolute; 
-		left: 128px; 
-		top: 5px;; 
-		width: 212px; 
-		height: 35px;
+    input {
+      display: none;
+    }
+  }
 
-		input {
-			display: none;
-		}
-	}
-
-	.add {
-		display: block;
-		width: 212px;
-		height: 50px;
-		margin-top: 20px;
-		text-align: center;
-		border: 1px solid $red;
-		border-radius: 3px;
-		cursor: pointer;	
-	}	
+  .add {
+    display: block;
+    width: 212px;
+    height: 50px;
+    margin-top: 20px;
+    text-align: center;
+    border: 1px solid $red;
+    border-radius: 3px;
+    cursor: pointer;
+  }
 }
 
 .grid {
-	display: grid;
-	gap: 43px;
-	grid-template-comumns: 1fr 1fr;
-	grid-template-rows: 114px 114px 114px;
+  display: grid;
+  gap: 43px;
+  grid-template-comumns: 1fr 1fr;
+  grid-template-rows: 114px 114px 114px;
 }
 
 .form {
-	display: block;
+  display: block;
 }
 
-
 .rules {
-	display: none;
+  display: none;
 
-	p {
-		position: relative;
-		max-width: 1329px;
-		margin-top: 40px;
-	}
+  p {
+    position: relative;
+    max-width: 1329px;
+    margin-top: 40px;
+  }
 
-	.circle {
-		margin-left: 53px;
+  .circle {
+    margin-left: 53px;
 
-		&:after {
-			content: '';
-			position: absolute;
-			width: 20px;
-			height: 20px;
-			border-radius: 50%;
-			left: -53px;
-			top: 4px;
-			background: $red;
-			transition: background .4s;		
-		}
-	}
+    &:after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      left: -53px;
+      top: 4px;
+      background: $red;
+      transition: background 0.4s;
+    }
+  }
 }
 
 @media (max-width: 1700px) {
+  .form {
+    margin-left: 40px;
+  }
+  .formData .size {
+    max-width: 600px;
+  }
 
-	.form {
-		margin-left: 40px;
-	}
-	.formData .size {
-		max-width: 600px;
-	}
-
-	.rules {
-		margin: 0 40px;
-	}
+  .rules {
+    margin: 0 40px;
+  }
 }
 
 @media (max-width: 1500px) {
-	.form {
-		margin-left: 20px;
-	}
-	.formData .size {
-		width: 500px;
-	}
+  .form {
+    margin-left: 20px;
+  }
+  .formData .size {
+    width: 500px;
+  }
 }
 
 @media (max-width: 1250px) {
-	.formData .size {
-		width: 460px;
-	}
+  .formData .size {
+    width: 460px;
+  }
 }
 
 @media (max-width: 1024px) {
-	.btnForm {
-		width: 240px !important;
-		height: 39px !important;
-		margin-top: 10px !important;
-		margin-right: 150px !important;
+  .btnForm {
+    width: 240px !important;
+    height: 39px !important;
+    margin-top: 10px !important;
+    margin-right: 150px !important;
 
-		&:hover {
-			&:before {
-					top: 42px !important;
-				}
-		}
-	}
+    &:hover {
+      &:before {
+        top: 42px !important;
+      }
+    }
+  }
 
-	.photo {
-		margin-bottom: 25px;
-	}
+  .photo {
+    margin-bottom: 25px;
+  }
 
-	.userForm hr {
-		margin: 5px;;
-	}
-	
-	.form {
-		margin: 0 auto;
-		max-width: 450px;
+  .userForm hr {
+    margin: 5px;
+  }
 
-		h3 {
-			margin-bottom: 5px;
-		}
+  .form {
+    margin: 0 auto;
+    max-width: 450px;
 
-		input {
-			margin-bottom: 10px;
-		}
+    h3 {
+      margin-bottom: 5px;
+    }
 
-		.submit {
-			margin-top: 20px;
-		}
-	}
+    input {
+      margin-bottom: 10px;
+    }
 
-	.formData .grid {
-		display: block;
-	}
+    .submit {
+      margin-top: 20px;
+    }
+  }
 
-	.rules {
-		margin: 50px 50px;
+  .formData .grid {
+    display: block;
+  }
 
-		p {
-			margin: 43px 0;
-			line-height: 38px;
-		}
-	}
+  .rules {
+    margin: 50px 50px;
+
+    p {
+      margin: 43px 0;
+      line-height: 38px;
+    }
+  }
 }
 
 @media (max-width: 785px) {
-	.btnForm {
-		width: 220px !important;
-		margin-right: 100px !important;
-	}	
+  .btnForm {
+    width: 220px !important;
+    margin-right: 100px !important;
+  }
 }
 
 @media (max-width: 767px) {
-	.rules {
-		margin: 40px 40px;
+  .rules {
+    margin: 40px 40px;
 
-		p {
-			margin: 40px 0;
-			line-height: 30px;
-		}
-	}
+    p {
+      margin: 40px 0;
+      line-height: 30px;
+    }
+  }
 }
 
 @media (max-width: 644px) {
-	.btnForm {
-		width: 190px !important;
-		margin-right: 40px !important;
+  .btnForm {
+    width: 190px !important;
+    margin-right: 40px !important;
+  }
 
-	}	
+  .rules {
+    h3 {
+      margin-bottom: 20px;
+      margin-top: 10px;
+    }
 
-	.rules {
-		h3 {
-			margin-bottom: 20px;
-			margin-top: 10px;
-		}
-		
-		p {
-			margin: 40px 0;
-			line-height: 26px;
-		}
-	}
+    p {
+      margin: 40px 0;
+      line-height: 26px;
+    }
+  }
 }
 
-
 @media (max-width: 490px) {
-	.form {
-		margin: 0 auto;
-		max-width: 310px;
-	}
+  .form {
+    margin: 0 auto;
+    max-width: 310px;
+  }
 
-	.formData .size {
-		width: 350px;
-	}
+  .formData .size {
+    width: 350px;
+  }
 
-	.btnForm {
-		width: 180px !important;
-		margin-right: 10px !important;
+  .btnForm {
+    width: 180px !important;
+    margin-right: 10px !important;
+  }
 
-	}	
+  .photo {
+    .add {
+      width: 180px;
+    }
 
-	.photo {
-		.add {
-			width: 180px;
-		}
+    .upload-file-container-text {
+      width: 140px;
+    }
+  }
 
-		.upload-file-container-text {
-			width: 140px; 
-		}
-	}
+  .rules {
+    margin: 25px 25px;
 
-	.rules {
-		margin: 25px 25px;
-
-		p {
-			margin: 25px 0;
-			line-height: 28px;
-		}
-	}
+    p {
+      margin: 25px 0;
+      line-height: 28px;
+    }
+  }
 }
 
 @media (max-width: 385px) {
-	.btnForm {
-		width: 155px !important;
-		margin-right: 0px !important;
-	}
+  .btnForm {
+    width: 155px !important;
+    margin-right: 0px !important;
+  }
 
-	.formData .size {
-		width: 310px;
-	}
+  .formData .size {
+    width: 310px;
+  }
 
-	.rules {
-		margin: 20px 20px;
+  .rules {
+    margin: 20px 20px;
 
-		p {
-			margin: 20px 0;
-			line-height: 23px;
-		}
-	}
+    p {
+      margin: 20px 0;
+      line-height: 23px;
+    }
+  }
 }
-
-
